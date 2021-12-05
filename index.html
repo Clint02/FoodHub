@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<meta content="" name="description" />
+		<meta content="" name="keywords" />
+
+		<!-- Favicons & Title -->
+		<link href="assets/img/favicon.png" rel="icon" />
+		<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+		<title>Dashboard | FoodHub</title>
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.gstatic.com" rel="preconnect" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+			rel="stylesheet"
+		/>
+
+		<!-- Vendor CSS Files -->
+		<link
+			href="assets/vendor/bootstrap/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+			rel="stylesheet"
+		/>
+		<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+		<link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+		<link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+		<link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+		<link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+
+		<!-- Template Main CSS File -->
+		<link href="assets/css/style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<!-- ======= Header ======= -->
+		<header id="header" class="header fixed-top d-flex align-items-center">
+			<div class="d-flex align-items-center justify-content-between">
+				<a href="index.html" class="logo d-flex align-items-center">
+					<img src="assets/img/logo.png" alt="" />
+					<span class="d-none d-lg-block"
+						>Food<span class="coklat">Hub</span></span
+					>
+				</a>
+				<i class="bi bi-list toggle-sidebar-btn"></i>
+			</div>
+			<!-- End Logo -->
+
+			<div class="search-bar">
+				<form class="search-form d-flex align-items-center" action="#">
+					<input
+						type="text"
+						name="query"
+						placeholder="Cari"
+						title="Enter search keyword"
+					/>
+					<button type="submit" title="Search">
+						<i class="bi bi-search"></i>
+					</button>
+				</form>
+			</div>
+			<!-- End Search Bar -->
+
+			<nav class="header-nav ms-auto">
+				<ul class="d-flex align-items-center">
+					<li class="nav-item d-block d-lg-none">
+						<a class="nav-link nav-icon search-bar-toggle" href="#">
+							<i class="bi bi-search"></i>
+						</a>
+					</li>
+					<!-- End Search Icon-->
+
+					<li class="nav-item dropdown">
+						<a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+							<i class="bi bi-bell"></i>
+							<span class="badge bg-primary badge-number">4</span> </a
+						><!-- End Notification Icon -->
+
+						<ul
+							class="
+								dropdown-menu dropdown-menu-end dropdown-menu-arrow
+								notifications
+							"
+						>
+							<li class="dropdown-header">
+								Kamu punya 4 notifikasi
+								<a href="#"
+									><span class="badge rounded-pill bg-primary p-2 ms-2"
+										>Lihat semua</span
+									></a
+								>
+							</li>
+							<li>
+								<hr class="dropdown-divider" />
+							</li>
+
+							<li class="notification-item">
+								<i class="bi bi-exclamation-circle text-warning"></i>
+								<div>
+									<h4>Data Barang</h4>
+									<p>Produksi barang meningkat</p>
+									<p>30 menit yang lalu</p>
+								</div>
+							</li>
+
+							<li>
+								<hr class="dropdown-divider" />
+							</li>
+
+							<li class="notification-item">
+								<i class="bi bi-x-circle text-danger"></i>
+								<div>
+									<h4>Data Barang</h4>
+									<p>Stock sudah mau habis</p>
+									<p>1 jam yang lalu</p>
+								</div>
+							</li>
+
+							<li>
+								<hr class="dropdown-divider" />
+							</li>
+
+							<li class="notification-item">
+								<i class="bi bi-check-circle text-success"></i>
+								<div>
+									<h4>Transaksi</h4>
+									<p>Alur kas perusahaan baik</p>
+									<p>2 jam yang lalu</p>
+								</div>
+							</li>
+
+							<li>
+								<hr class="dropdown-divider" />
+							</li>
+
+							<li class="notification-item">
+								<i class="bi bi-info-circle text-primary"></i>
+								<div>
+									<h4>Karyawan</h4>
+									<p>Karyawan terbaik bulan ini adalah ...</p>
+									<p>4 jam yang lalu</p>
+								</div>
+							</li>
+
+							<li>
+								<hr class="dropdown-divider" />
+							</li>
+							<li class="dropdown-footer">
+								<a href="#">Lihat semua notifikasi</a>
+							</li>
+						</ul>
+						<!-- End Notification Dropdown Items -->
+					</li>
+					<!-- End Notification Nav -->
+
+					<li class="nav-item dropdown">
+						<a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+							<i class="bi bi-chat-left-text"></i>
+							<span class="badge bg-success badge-number">3</span> </a
+						><!-- End Messages Icon -->
+
+						<ul
+							class="
+								dropdown-menu dropdown-menu-end dropdown-menu-arrow
+								messages
+							"
+						>
+							<li class="dropdown-header">
+								Kamu punya 3 pesan baru
+								<a href="#"
+									><span class="badge rounded-pill bg-primary p-2 ms-2"
+										>Lihat semua</span
+									></a
+								>
+							</li>
+							<li>
+								<hr class="dropdown-divider" />
+							</li>
+
+							<li class="message-item">
+								<a href="#">
+									<img
+										src="assets/img/messages-1.jpg"
+										alt=""
+										class="rounded-circle"
+									/>
+									<div>
+										<h4>Rizal Swikey</h4>
+										<p>Bagaimana progress untuk webnya</p>
+										<p>4 jam yang lalu</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<hr class="dropdown-divider" />
+							</li>
+
+							<li class="message-item">
+								<a href="#">
+									<img
+										src="assets/img/messages-2.jpg"
+										alt=""
+										class="rounded-circle"
+									/>
+									<div>
+										<h4>Dhafin</h4>
+										<p>Semangat ngerjain projek bang</p>
+										<p>6 jam yang lalu</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<hr class="dropdown-divider" />
+							</li>
+
+							<li class="message-item">
+								<a href="#">
+									<img
+										src="assets/img/messages-3.jpg"
+										alt=""
+										class="rounded-circle"
+									/>
+									<div>
+										<h4>Ilham N.</h4>
+										<p>Bang bantuin aku dong, aku gak ngerti</p>
+										<p>8 jam yang lalu</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<hr class="dropdown-divider" />
+							</li>
+
+							<li class="dropdown-footer">
+								<a href="#">Lihat semua pesan</a>
+							</li>
+						</ul>
+						<!-- End Messages Dropdown Items -->
+					</li>
+					<!-- End Messages Nav -->
+
+					<li class="nav-item dropdown pe-3">
+						<a
+							class="nav-link nav-profile d-flex align-items-center pe-0"
+							href="#"
+							data-bs-toggle="dropdown"
+						>
+							<img
+								src="assets/img/profile-img.jpg"
+								alt="Profile"
+								class="rounded-circle"
+							/>
+							<span class="d-none d-md-block dropdown-toggle ps-2"
+								>Kenneth W.</span
+							> </a
+						><!-- End Profile Iamge Icon -->
+
+						<ul
+							class="
+								dropdown-menu dropdown-menu-end dropdown-menu-arrow
+								profile
+							"
+						>
+							<li class="dropdown-header">
+								<h6>Kenneth C. Waworuntu</h6>
+								<span>Fullstack Developer</span>
+							</li>
+							<li>
+								<hr class="dropdown-divider" />
+							</li>
+
+							<li>
+								<a
+									class="dropdown-item d-flex align-items-center"
+									href="users-profile.html"
+								>
+									<i class="bi bi-person"></i>
+									<span>Profil Saya</span>
+								</a>
+							</li>
+							<li>
+								<hr class="dropdown-divider" />
+							</li>
+
+							<li>
+								<a
+									class="dropdown-item d-flex align-items-center"
+									href="users-profile.html"
+								>
+									<i class="bi bi-gear"></i>
+									<span>Pengaturan</span>
+								</a>
+							</li>
+							<li>
+								<hr class="dropdown-divider" />
+							</li>
+
+							<li>
+								<a
+									class="dropdown-item d-flex align-items-center"
+									href="pages-faq.html"
+								>
+									<i class="bi bi-question-circle"></i>
+									<span>Bantuan</span>
+								</a>
+							</li>
+							<li>
+								<hr class="dropdown-divider" />
+							</li>
+
+							<li>
+								<a class="dropdown-item d-flex align-items-center" href="#">
+									<i class="bi bi-box-arrow-right"></i>
+									<span>Keluar</span>
+								</a>
+							</li>
+						</ul>
+						<!-- End Profile Dropdown Items -->
+					</li>
+					<!-- End Profile Nav -->
+				</ul>
+			</nav>
+			<!-- End Icons Navigation -->
+		</header>
+		<!-- End Header -->
+
+		<!-- ======= Sidebar ======= -->
+		<aside id="sidebar" class="sidebar">
+			<ul class="sidebar-nav" id="sidebar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">
+						<i class="bi bi-house"></i>
+						<span>Beranda</span>
+					</a>
+				</li>
+				<!-- End Beranda Nav -->
+
+				<li class="nav-item">
+					<a
+						class="nav-link collapsed"
+						data-bs-target="#components-nav"
+						data-bs-toggle="collapse"
+						href="#"
+					>
+						<i class="bi bi-folder2"></i><span>Data Master</span
+						><i class="bi bi-chevron-down ms-auto"></i>
+					</a>
+					<ul
+						id="components-nav"
+						class="nav-content collapse"
+						data-bs-parent="#sidebar-nav"
+					>
+						<li>
+							<a href="data-mentah.html">
+								<i class="bi bi-circle"></i><span>Data Barang Mentah</span>
+							</a>
+						</li>
+						<li>
+							<a href="data-jadi.html">
+								<i class="bi bi-circle"></i><span>Data Barang Jadi</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<!-- End Data Master Nav -->
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="transaksi.html">
+						<i class="bi bi-basket"></i>
+						<span>Transaksi</span>
+					</a>
+				</li>
+				<!-- End Transaksi Page Nav -->
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="laporan.html">
+						<i class="bi bi-file-earmark-text"></i>
+						<span>Laporan</span>
+					</a>
+				</li>
+				<!-- End Laporan Page Nav -->
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="karyawan.html">
+						<i class="bi bi-person"></i>
+						<span>Karyawan</span>
+					</a>
+				</li>
+				<!-- End Karyawan Page Nav -->
+
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="masuk.html">
+						<i class="bi bi-box-arrow-right"></i>
+						<span>Masuk</span>
+					</a>
+				</li>
+				<!-- End Masuk Page Nav -->
+			</ul>
+		</aside>
+		<!-- End Sidebar-->
+
+		<main id="main" class="main">
+			<div class="pagetitle">
+				<h1>Beranda</h1>
+				<nav>
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item active">Beranda</li>
+					</ol>
+				</nav>
+			</div>
+			<!-- End Page Title -->
+
+			<section class="section dashboard">
+				<div class="row">
+					<!-- Left side columns -->
+					<div class="col-lg-8">
+						<div class="row">
+							<!-- Laporan -->
+							<div class="col-12">
+								<div class="card">
+									<div class="filter">
+										<a class="icon" href="#" data-bs-toggle="dropdown"
+											><i class="bi bi-three-dots"></i
+										></a>
+										<ul
+											class="
+												dropdown-menu dropdown-menu-end dropdown-menu-arrow
+											"
+										>
+											<li class="dropdown-header text-start">
+												<h6>Filter</h6>
+											</li>
+
+											<li><a class="dropdown-item" href="#">Hari ini</a></li>
+											<li><a class="dropdown-item" href="#">Bulan ini</a></li>
+											<li><a class="dropdown-item" href="#">Tahun ini</a></li>
+										</ul>
+									</div>
+
+									<div class="card-body">
+										<h5 class="card-title">Laporan <span>/Hari ini</span></h5>
+
+										<!-- Line Chart -->
+										<div id="reportsChart"></div>
+										<script>
+											document.addEventListener("DOMContentLoaded", () => {
+												new ApexCharts(
+													document.querySelector("#reportsChart"),
+													{
+														series: [
+															{
+																name: "Barang Masuk",
+																data: [1000, 2250, 1900, 2500, 1100],
+															},
+															{
+																name: "Barang Keluar",
+																data: [1000, 3500, 1000, 2500, 1000],
+															},
+														],
+														chart: {
+															height: 350,
+															type: "area",
+															toolbar: {
+																show: false,
+															},
+														},
+														markers: {
+															size: 4,
+														},
+														colors: ["#4154f1", "#ff771d"],
+														fill: {
+															type: "gradient",
+															gradient: {
+																shadeIntensity: 1,
+																opacityFrom: 0.3,
+																opacityTo: 0.4,
+																stops: [0, 90, 100],
+															},
+														},
+														dataLabels: {
+															enabled: false,
+														},
+														stroke: {
+															curve: "smooth",
+															width: 2,
+														},
+														xaxis: {
+															type: "datetime",
+															categories: [
+																"2021-11-29T04:00:00.000Z",
+																"2021-11-29T12:00:00.000Z",
+																"2021-11-29T15:00:00.000Z",
+																"2021-11-29T17:00:00.000Z",
+																"2021-11-29T20:00:00.000Z",
+															],
+														},
+														tooltip: {
+															x: {
+																format: "dd/MM/yy HH:mm",
+															},
+														},
+													}
+												).render();
+											});
+										</script>
+
+										<!-- End Line Chart -->
+									</div>
+								</div>
+							</div>
+							<!-- End Laporan -->
+
+							<!-- Transaksi Terkini -->
+							<div class="col-12">
+								<div class="card recent-sales">
+									<div class="filter">
+										<a class="icon" href="#" data-bs-toggle="dropdown"
+											><i class="bi bi-three-dots"></i
+										></a>
+										<ul
+											class="
+												dropdown-menu dropdown-menu-end dropdown-menu-arrow
+											"
+										>
+											<li class="dropdown-header text-start">
+												<h6>Filter</h6>
+											</li>
+
+											<li><a class="dropdown-item" href="#">Hari ini</a></li>
+											<li><a class="dropdown-item" href="#">Bulan ini</a></li>
+											<li><a class="dropdown-item" href="#">Tahun ini</a></li>
+										</ul>
+									</div>
+
+									<div class="card-body">
+										<h5 class="card-title">
+											Transaksi <span>| Hari ini</span>
+										</h5>
+
+										<table class="table table-borderless datatable">
+											<thead>
+												<tr>
+													<th scope="col">ID Transaksi</th>
+													<th scope="col">Pelanggan</th>
+													<th scope="col">Produk</th>
+													<th scope="col">Transaksi</th>
+													<th scope="col">Status</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th scope="row"><a href="#">TK-00010-25112021</a></th>
+													<td>PT. Infofud</td>
+													<td>
+														<a href="#" class="text-primary">Lays</a>
+													</td>
+													<td>Keluar</td>
+													<td>
+														<span class="badge bg-success">Approved</span>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row"><a href="#">TM-00010-25112021</a></th>
+													<td>PT. Farming Inc</td>
+													<td>
+														<a href="#" class="text-primary">Kentang</a>
+													</td>
+													<td>Masuk</td>
+													<td>
+														<span class="badge bg-warning">Approved</span>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row"><a href="#">TM-00011-25112021</a></th>
+													<td>PT. Chemistry</td>
+													<td>
+														<a href="#" class="text-primary">Pewarna Makanan</a>
+													</td>
+													<td>Masuk</td>
+													<td>
+														<span class="badge bg-success">Rejected</span>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row"><a href="#">TM-00012-25112021</a></th>
+													<td>PT. Bread</td>
+													<td>
+														<a href="#" class="text-primary">Tepung</a>
+													</td>
+													<td>Masuk</td>
+													<td><span class="badge bg-danger">Approved</span></td>
+												</tr>
+												<tr>
+													<th scope="row"><a href="#">TK-00011-25112021</a></th>
+													<td>PT. Oreo</td>
+													<td>
+														<a href="#" class="text-primary">Oreo</a>
+													</td>
+													<td>Keluar</td>
+													<td>
+														<span class="badge bg-success">Pending</span>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- End Transaksi Terkini -->
+						</div>
+					</div>
+					<!-- End Left side columns -->
+
+					<!-- Right side columns -->
+					<div class="col-lg-4">
+						<!-- Aktivitas Terkini -->
+						<div class="card">
+							<div class="filter">
+								<a class="icon" href="#" data-bs-toggle="dropdown"
+									><i class="bi bi-three-dots"></i
+								></a>
+								<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+									<li class="dropdown-header text-start">
+										<h6>Filter</h6>
+									</li>
+
+									<li><a class="dropdown-item" href="#">Hari ini</a></li>
+									<li><a class="dropdown-item" href="#">Bulan ini</a></li>
+									<li><a class="dropdown-item" href="#">Tahun ini</a></li>
+								</ul>
+							</div>
+
+							<div class="card-body">
+								<h5 class="card-title">Aktivitas <span>| Hari ini</span></h5>
+
+								<div class="activity">
+									<div class="activity-item d-flex">
+										<div class="activite-label">10 min</div>
+										<i
+											class="
+												bi bi-circle-fill
+												activity-badge
+												text-success
+												align-self-start
+											"
+										></i>
+										<div class="activity-content">
+											<a href="#" class="fw-bold text-dark"
+												>TK-00011-25112021</a
+											>
+											sudah disubmit. Menunggu konfirmasi manager.
+										</div>
+									</div>
+									<!-- End aktivitas item-->
+
+									<div class="activity-item d-flex">
+										<div class="activite-label">1 jam</div>
+										<i
+											class="
+												bi bi-circle-fill
+												activity-badge
+												text-danger
+												align-self-start
+											"
+										></i>
+										<div class="activity-content">
+											<a href="#" class="fw-bold text-dark"
+												>TM-00012-25112021</a
+											>
+											telah selesai. Barang diterima Muhammad Dhafin Firmansyah.
+										</div>
+									</div>
+									<!-- End aktivitas item-->
+
+									<div class="activity-item d-flex">
+										<div class="activite-label">4 jam</div>
+										<i
+											class="
+												bi bi-circle-fill
+												activity-badge
+												text-primary
+												align-self-start
+											"
+										></i>
+										<div class="activity-content">
+											<a href="#" class="fw-bold text-dark"
+												>TM-00011-25112021</a
+											>
+											ditolak oleh manager Ilham Nuansa Syailendra P. P. Dapat
+											dilakukan konfirmasi dengan mengirim pesan kepada manager.
+										</div>
+									</div>
+									<!-- End aktivitas item-->
+
+									<div class="activity-item d-flex">
+										<div class="activite-label">5 jam</div>
+										<i
+											class="
+												bi bi-circle-fill
+												activity-badge
+												text-info
+												align-self-start
+											"
+										></i>
+										<div class="activity-content">
+											<a href="#" class="fw-bold text-dark"
+												>TM-00010-25112021
+											</a>
+											telah selesai. Barang diterima Rizal Akbar Syah Fauzan
+											Putra.
+										</div>
+									</div>
+									<!-- End aktivitas item-->
+
+									<div class="activity-item d-flex">
+										<div class="activite-label">12 jam</div>
+										<i
+											class="
+												bi bi-circle-fill
+												activity-badge
+												text-warning
+												align-self-start
+											"
+										></i>
+										<div class="activity-content">
+											<a href="#" class="fw-bold text-dark"
+												>Kenneth Clinton Waworuntu
+											</a>
+											dipromosikan menjadi administrator.
+										</div>
+									</div>
+									<!-- End aktivitas item-->
+								</div>
+							</div>
+						</div>
+						<!-- End Aktivitas Terkini -->
+
+						<!-- Berita Terupdate -->
+						<div class="card">
+							<div class="filter">
+								<a class="icon" href="#" data-bs-toggle="dropdown"
+									><i class="bi bi-three-dots"></i
+								></a>
+								<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+									<li class="dropdown-header text-start">
+										<h6>Filter</h6>
+									</li>
+
+									<li><a class="dropdown-item" href="#">Hari ini</a></li>
+									<li><a class="dropdown-item" href="#">Bulan ini</a></li>
+									<li><a class="dropdown-item" href="#">Tahun ini</a></li>
+								</ul>
+							</div>
+
+							<div class="card-body pb-0">
+								<h5 class="card-title">
+									Berita Terupdate <span>| Hari ini</span>
+								</h5>
+
+								<div class="news">
+									<div class="post-item clearfix">
+										<img src="assets/img/news-1.jpg" alt="" />
+										<h4><a href="#">November Agenda</a></h4>
+										<p>
+											Agenda kita dalam bulan November ini terdiri atas beberapa
+											....
+										</p>
+									</div>
+
+									<div class="post-item clearfix">
+										<img src="assets/img/news-2.jpg" alt="" />
+										<h4><a href="#">Karyawan Hebat Oktober</a></h4>
+										<p>
+											Dalam masa yang sulit, karyawan-karyawan ini membuktikan
+											....
+										</p>
+									</div>
+
+									<div class="post-item clearfix">
+										<img src="assets/img/news-3.jpg" alt="" />
+										<h4>
+											<a href="#">Stockpile September</a>
+										</h4>
+										<p>
+											Seperti yang kalian tahu, bulan September adalah bulan
+											....
+										</p>
+									</div>
+								</div>
+								<!-- End sidebar recent posts-->
+							</div>
+						</div>
+						<!-- End Berita Terupdate -->
+					</div>
+					<!-- End Right side columns -->
+				</div>
+			</section>
+		</main>
+		<!-- End #main -->
+
+		<!-- ======= Footer ======= -->
+		<footer id="footer" class="footer">
+			<div class="copyright">
+				&copy; Copyright
+				<strong
+					><span>Food<span class="coklat">Hub</span></span></strong
+				>. All Rights Reserved
+			</div>
+		</footer>
+		<!-- End Footer -->
+
+		<a
+			href="#"
+			class="back-to-top d-flex align-items-center justify-content-center"
+			><i class="bi bi-arrow-up-short"></i
+		></a>
+
+		<!-- Vendor JS Files -->
+		<script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/vendor/chart.js/chart.min.js"></script>
+		<script src="assets/vendor/echarts/echarts.min.js"></script>
+		<script src="assets/vendor/quill/quill.min.js"></script>
+		<script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+		<script src="assets/vendor/tinymce/tinymce.min.js"></script>
+		<script src="assets/vendor/php-email-form/validate.js"></script>
+
+		<!-- Template Main JS File -->
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
